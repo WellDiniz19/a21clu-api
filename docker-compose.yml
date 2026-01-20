@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres
+    container_name: a21clu_db
+    environment:
+      POSTGRES_DB: a21club_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 241206
+    ports:
+      - "5432:5432"

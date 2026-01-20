@@ -27,6 +27,8 @@ public class User implements Serializable {
     private String name;
     @Column(name = "lastName", nullable = false, length = 150)
     private String lastName;
+    @Column(name = "date_of_birth", nullable = false, length = 20)
+    private String date_of_birth;
     @Column(name= "foneUser", nullable = false, length = 20)
     private String foneUser;
     @Column(name = "emailUser", unique = true, nullable = false, length = 120)
@@ -65,7 +67,7 @@ public class User implements Serializable {
     @Column(name = "modified_by")
     private String modified_by;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "idAddress")
     private Address address;
 
