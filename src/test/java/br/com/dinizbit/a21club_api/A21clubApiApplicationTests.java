@@ -8,6 +8,7 @@ class A21clubApiApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// Se este teste passar, a conexão com o banco foi estabelecida com sucesso
 	}
 
 }
